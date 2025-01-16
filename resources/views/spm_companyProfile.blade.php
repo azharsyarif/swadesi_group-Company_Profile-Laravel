@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
+    <!-- SEO -->
+    <meta name="description" content="Jasa pengiriman Logistik dengan biaya murah dan terjangkau dapatkan penawaran khusus dari Swadesi Express">
+    <meta name="keywords" content="swadesi, swadeshi, swadesi express, logistik, jasa, swadesi group">
+    <meta name="author" content="Swadesi Persada Mandiri">
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <title>Swadesi Perdana Mandiri</title>
@@ -17,35 +23,47 @@
                 <span class="text-xl font-bold">Swadesi Perdana Mandiri</span>
             </a>
 
+            <!-- Hamburger Menu -->
+            <div class="block lg:hidden">
+                <button id="hamburger" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
             <!-- Menu -->
-            <div class="flex space-x-8 gap-3">
+            <div class="hidden lg:flex space-x-8 gap-3 navbar-menu">
                 <a href="#home" class="text-gray-700 hover:text-gray-900 hover:underline hover:font-bold transition-all duration-300 transform hover:scale-105">Home</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900 hover:underline hover:font-bold transition-all duration-300 transform hover:scale-105">Project Kami</a>
+                <a href="#kerja-sama" class="text-gray-700 hover:text-gray-900 hover:underline hover:font-bold transition-all duration-300 transform hover:scale-105">Partner</a>
                 <a href="#tentang_kami" class="text-gray-700 hover:text-gray-900 hover:underline hover:font-bold transition-all duration-300 transform hover:scale-105">Tentang Kami</a>
                 <a href="#contact" class="text-gray-700 hover:text-gray-900 hover:underline hover:font-bold transition-all duration-300 transform hover:scale-105">Kontak Kami</a>
             </div>
+        </div>
 
-            <!-- Language Selector -->
-            <div class="flex space-x-4">
-                <a href="#" class="text-gray-700 hover:text-gray-900">ID</a>
-                <a href="#" class="text-gray-700 hover:text-gray-900">EN</a>
+        <!-- Dropdown Menu for Mobile -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white">
+            <div class="flex flex-col space-y-2 p-4">
+                <a href="#home" class="text-gray-700 hover:text-gray-900">Home</a>
+                <a href="#tentang_kami" class="text-gray-700 hover:text-gray-900">Tentang Kami</a>
+                <a href="#kerja-sama" class="text-gray-700 hover:text-gray-900">Partner</a>
+                <a href="#contact" class="text-gray-700 hover:text-gray-900">Kontak Kami</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
     <section id='home' class="flex flex-col items-center justify-center bg-slate-200 h-screen text-center" data-aos="fade-up">
-        <img src="path/to/your/image.jpg" alt="-" class="absolute inset-0 object-cover w-full h-full opacity-50" />
-        <div class="relative z-10">
-            <h1 class="text-4xl font-bold text-gray-800">Logistik dan Layanan Terpadu untuk Mendorong Keberhasilan Anda</h1>
-            <p class="mt-4 text-lg text-gray-600">Menghubungkan bisnis dengan solusi yang handal untuk mempermudah operasi dan mempercepat pertumbuhan</p>
+        <div class="relative z-10 px-4">
+            <h1 class="text-4xl font-bold text-gray-800">Logistik dan Layanan Terpadu</h1>
+            <p class="mt-4 text-lg text-gray-600">Solusi handal untuk mempermudah operasi dan mempercepat pertumbuhan</p>
             <a href="#contact" class="mt-6 inline-block px-6 py-3 text-white bg-blue-600 rounded hover:bg-blue-700 transition duration-300">Kontak Sekarang</a>
         </div>
     </section>
 
-    <section id="tentang_kami" class="py-10 bg-gray-100" data-aos="fade-up">
-        <div class="container mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-6">Tentang Kami</h2>
+    <section id="tentang_kami" class="py-10 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+            <h2 class="text-center text-4xl font-semibold text-gray-900 mb-6">Tentang Kami</h2>
             <p class="text-lg text-gray-600 text-center mb-8">
                 <span class='font-bold'>PT SWADESI PERDANA MANDIRI</span> berdiri pada tahun 2019 dan bergerak pada berbagai bidang usaha berikut:
             </p>
@@ -54,7 +72,7 @@
                 <!-- Card 1: Instalasi Telekomunikasi -->
                 <div class="relative group bg-white rounded-lg shadow-lg">
                     <h3 class="text-xl font-bold text-center p-4">Instalasi Telekomunikasi</h3>
-                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Instalasi Telekomunikasi" class="w-full h-32 object-cover rounded-b-lg">
+                    <img src="{{ asset('storage/images/spm/instalasi_telemunikasi.jpg') }}" alt="Instalasi Telekomunikasi" class="w-full h-32 object-cover rounded-b-lg">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white text-center p-4">Menyediakan layanan instalasi dan pemeliharaan sistem telekomunikasi untuk berbagai kebutuhan.</p>
                     </div>
@@ -63,7 +81,7 @@
                 <!-- Card 2: Perdagangan Besar atas Dasar Balas Jasa (Fee) atau Kontrak -->
                 <div class="relative group bg-white rounded-lg shadow-lg">
                     <h3 class="text-xl font-bold text-center p-4">Perdagangan Besar</h3>
-                    <img src="https://images.unsplash.com/photo-1581091870620-1c1c1c1c1c1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Perdagangan Besar" class="w-full h-32 object-cover rounded-b-lg">
+                    <img src="{{ asset('storage/images/spm/perdagangan_besar.jpg') }}" alt="Perdagangan Besar" class="w-full h-32 object-cover rounded-b-lg">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white text-center p-4">Melakukan perdagangan besar atas dasar balas jasa (fee) atau kontrak untuk berbagai produk.</p>
                     </div>
@@ -72,7 +90,7 @@
                 <!-- Card 3: Perdagangan Besar Komputer dan Perlengkapan Komputer -->
                 <div class="relative group bg-white rounded-lg shadow-lg">
                     <h3 class="text-xl font-bold text-center p-4">Perdagangan Komputer</h3>
-                    <img src="https://images.unsplash.com/photo-1581091870620-1c1c1c1c1c1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Perdagangan Komputer" class="w-full h-32 object-cover rounded-b-lg">
+                    <img src="{{ asset('storage/images/spm/perdagangan_komputer.jpg') }}" alt="Perdagangan Komputer" class="w-full h-32 object-cover rounded-b-lg">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white text-center p-4">Menyediakan berbagai perangkat komputer dan perlengkapannya untuk kebutuhan bisnis dan individu.</p>
                     </div>
@@ -81,7 +99,7 @@
                 <!-- Card 4: Perdagangan Besar Peralatan Telekomunikasi -->
                 <div class="relative group bg-white rounded-lg shadow-lg">
                     <h3 class="text-xl font-bold text-center p-4">Perdagangan Peralatan Telekomunikasi</h3>
-                    <img src="https://images.unsplash.com/photo-1581091870620-1c1c1c1c1c1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Perdagangan Peralatan Telekomunikasi" class="w-full h-32 object-cover rounded-b-lg">
+                    <img src="{{ asset('storage/images/spm/perdagangan_peralatan_telemunikasi.jpg') }}" alt="Perdagangan Peralatan Telekomunikasi" class="w-full h-32 object-cover rounded-b-lg">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white text-center p-4">Menjual peralatan telekomunikasi berkualitas tinggi untuk mendukung komunikasi yang efektif.</p>
                     </div>
@@ -90,7 +108,7 @@
                 <!-- Card 5: Perdagangan Besar Mesin, Peralatan dan Perlengkapan Lainnya -->
                 <div class="relative group bg-white rounded-lg shadow-lg">
                     <h3 class="text-xl font-bold text-center p-4">Perdagangan Mesin</h3>
-                    <img src="https://images.unsplash.com/photo-1581091870620-1c1c1c1c1c1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Perdagangan Mesin" class="w-full h-32 object-cover rounded-b-lg">
+                    <img src="{{ asset('storage/images/spm/perdagangan_mesin.jpg') }}" alt="Perdagangan Mesin" class="w-full h-32 object-cover rounded-b-lg">
                     <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white text-center p-4">Menyediakan berbagai jenis mesin untuk industri dan kebutuhan lainnya.</p>
                     </div>
@@ -116,18 +134,17 @@
         </div>
     </section>
 
-
     <section id="kerja-sama" class="py-10 " data-aos="fade-up">
-        <div class="bg-white py-24 sm:py-32">
+        <div class="py-24 sm:py-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                <h2 class="text-center text-2xl font-semibold text-gray-900 mb-6">Dipercaya oleh tim inovatif terkemuka</h2>
-                <p class="text-center text-gray-600 mb-10">
-                    Berikut adalah beberapa perusahaan yang telah bekerja sama dengan kami:
+                <h2 class="text-center text-4xl font-semibold text-gray-900 mb-6">Dipercaya oleh tim inovatif terkemuka</h2>
+                <p class="text-center text-gray-600 mb-10 text-lg">
+                    Kami bangga telah menjalin kerja sama dengan perusahaan terkemuka berikut:
                 </p>
                 <div class="mx-auto grid max-w-lg grid-cols-1 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-1 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-1">
                     <div class="relative">
                         <img
-                            class="max-h-48 w-full object-contain mx-auto cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out"
+                            class="max-h-48 w-fit object-contain mx-auto cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 hover:outline hover:outline-2 hover:outline-slate-600 hover:rounded-lg"
                             src="storage/images/scm/telkom.png"
                             alt="Telkom"
                             width="632"
@@ -159,10 +176,10 @@
     </div>
 
     <section id="contact" class="py-10 bg-gray-100" data-aos="fade-up">
-        <div class="container mx-auto">
+        <div class="container mx-auto px-4"> <!-- Menambahkan padding horizontal -->
             <h2 class="text-3xl font-bold text-center mb-2">Kontak Kami</h2>
             <p class="text-center text-lg text-gray-600 mb-6">
-                Kami siap membantu Anda! Silakan hubungi kami melalui informasi di bawah ini atau isi formulir untuk pertanyaan lebih lanjut.
+                Untuk penawaran yang menarik anda dapat menghubungi kami ke berbagai layanan komunikasi yang telah kami sediakan.
             </p>
 
             <!-- Iframe Google Maps -->
@@ -173,26 +190,28 @@
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy"
-                class="mb-6"></iframe>
+                class="mb-6 rounded-lg shadow-md"></iframe>
 
-            <div class="flex flex-col md:flex-row items-start md:items-center mt-6">
+            <div class="flex flex-col md:flex-row md:space-x-6">
                 <!-- Informasi Kontak -->
                 <div class="md:w-1/2 p-6">
-                    <p class="font-bold">Lokasi:</p>
-                    <p class="mt-2 text-gray-600">
-                        <a href="https://goo.gl/maps/hDcnrG4k5bpHPWn69" target="_blank" class="text-blue-600 hover:underline">RT. 002 RW. 005 Kel. Sawah Lama, Kec. Ciputat, Kota Tangerang Selatan</a>
-                    </p>
-                    <p class="mt-4 font-bold">Email:</p>
-                    <p class="mt-2 text-gray-600">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Swadesi.perdana.mandiri@gmail.com" target="_blank" class="text-blue-600 hover:underline">Swadesi.perdana.mandiri@gmail.com</a>
-                    </p>
-                    <p class="mt-4 font-bold">Fax:</p>
-                    <p class="mt-2 text-gray-600">(021) 749 6065</p>
+                    <div class="mb-4">
+                        <h3 class="font-bold text-lg">Lokasi</h3>
+                        <p>JL. Ki Hajar Dewantoro No.45B, Sawah Lama, Kec. Ciputat, Kota Tangerang Selatan, Banten 15412</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-bold text-lg">Email</h3>
+                        <p>swadesiexpress@gmail.com</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-bold text-lg">Pusat Informasi</h3>
+                        <p>(021) 7496061</p>
+                    </div>
                 </div>
 
                 <!-- Form Kontak -->
                 <div class="md:w-1/2 p-6 bg-white rounded shadow-lg">
-                    <form class="mt-8 space-y-4" method="POST">
+                    <form class="space-y-4" method="POST">
                         <div>
                             <label for="first-name" class="block text-gray-700 text-sm font-bold mb-2">Nama Anda</label>
                             <input type="text" id="first-name" placeholder="Nama Anda" class="w-full p-2 border border-gray-300 rounded-lg" required>
@@ -221,6 +240,28 @@
             </div>
         </div>
     </section>
+
+
+    <footer class="py-6 bg-white shadow">
+        <div class="container mx-auto flex flex-col items-center md:flex-row md:justify-between">
+            <!-- Logo -->
+            <div class="flex items-center mb-4 md:mb-0">
+                <img src="img/logo/SPM_Logo.png" alt="Logo" class="h-10 mr-2">
+                <span class="text-xl font-bold">Swadesi Perdana Mandiri</span>
+            </div>
+
+            <!-- Menu -->
+            <div class="flex space-x-4 mb-4 md:mb-0">
+                <a href="#home" class="text-gray-700 hover:text-gray-900">Home</a>
+                <a href="#tentang_kami" class="text-gray-700 hover:text-gray-900">Tentang Kami</a>
+                <a href="#kerja-sama" class="text-gray-700 hover:text-gray-900">Partner</a>
+                <a href="#contact" class="text-gray-700 hover:text-gray-900">Kontak Kami</a>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="text-sm text-gray-600">&copy; 2023 Swadesi Perdana Mandiri. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
     <script>
@@ -257,6 +298,16 @@
             if (popupContent && !popupContent.contains(event.target) && !event.target.classList.contains('cursor-pointer')) {
                 hidePopup();
             }
+        });
+    </script>
+
+    <script>
+        // Hamburger menu functionality
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
         });
     </script>
 </body>

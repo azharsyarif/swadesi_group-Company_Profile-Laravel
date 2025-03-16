@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+     <!-- Google Verification -->
+     <meta name="google-site-verification" content="udFsWFqanL9Tz5u_0fa90JOtuabSyggpMPhlOeZzoAc" />
+
+     <!-- SEO -->
+    <meta name="description" content="Jasa pengiriman Logistik dengan biaya murah dan terjangkau dapatkan penawaran khusus dari Swadesi Perdana Mandiri. Kategori: Logistik, Transportasi, Pengiriman, Ekspedisi">
+     <meta name="keywords" content="swadesi, swadeshi, swadesi express, logistik, , swadesi group, swadesi express, swadesi cargo, swadesi logistics, swadesi transport, swadesi delivery, swadesi ekspedisi, swadesi pengiriman, swadesi jasa pengiriman, swadesi jasa logistik, swadesi jasa transport, swadesi jasa delivery, swadesi jasa ekspedisi, swadesi jasa pengiriman murah, swadesi jasa logistik murah, swadesi jasa transport murah, swadesi jasa delivery murah, swadesi jasa ekspedisi murah">
+     <meta name="author" content="Swadesi Group">
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PS5KSBDR88"></script>
+
+
     <title>Swadesi Group</title>
     <script>
         function changeLanguage(lang) {
@@ -19,6 +32,7 @@
             en: {
                 title: "We Make Transport Fast And Safe",
                 description: "We are on the road to carry your dreams.",
+
                 servicesTitle: "Our Services",
                 servicesDescription: "Explore our range of high-quality solutions tailored to your needs.",
                 explore: "EXPLORE",
@@ -36,9 +50,9 @@
     </script>
 </head>
 <body class="bg-gray-100 flex flex-col min-h-screen" onload="changeLanguage('id')">
-    <nav class="bg-gray-800 p-4">
+    <nav class="bg-white p-4 shadow">
         <div class="container mx-auto flex justify-between">
-            <a href="/company-group" class="text-white text-lg font-bold">SWADESI</a>
+            <a href="/company-group" class="text-gray-800 text-lg font-bold">SWADESI</a>
             <div class="flex items-center">
                 <button onclick="changeLanguage('id')" class="ml-4 p-2">
                     <img src="storage/images/indonesian_flag.png" alt="Bahasa Indonesia" class="w-8 h-8 rounded-full">
@@ -80,16 +94,15 @@
         </div>
     </section>
 
-    <footer class="bg-gray-800 text-white py-4 mt-auto">
+    <footer class=" text-black py-4 mt-auto">
         <div class="container mx-auto flex justify-between items-center">
             <div>
                 <p class="mb-2" data-translate="footer">&copy; 2025 Swadesi Group. All rights reserved.</p>
             </div>
             <div class="flex space-x-4">
-                <a href="#" class="text-gray-400 hover:text-white">Facebook</a>
-                <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
-                <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
-                <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+                <a href="/about-us" class="text-gray-600 hover:text-black">About Us</a>
+                <a href="/services" class="text-gray-600 hover:text-black">Layanan</a>
+                <a href="/faq" class="text-gray-600 hover:text-black">FAQ</a>
             </div>
         </div>
     </footer>

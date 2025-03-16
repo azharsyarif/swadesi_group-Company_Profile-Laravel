@@ -14,13 +14,13 @@ class CompanyProfileController extends Controller
         $services = [
             [
                 'title' => 'Swadesi Cipta Mandiri',
-                'description' => 'We provide high-quality solutions tailored to your needs.',
+                'description' => 'Layanan pengiriman udara, darat, dan laut yang aman dan tepat waktu.',
                 'image' => 'storage/images/cargo_1.jpg',
                 'link' => '/swadesi-cipta-mandiri-id'
             ],
             [
                 'title' => 'Swadesi Perdana Mandiri',
-                'description' => 'Our team is dedicated to delivering exceptional results.',
+                'description' => 'Perdagangan barang dan jasa yang mencakup berbagai sektor industri, memastikan kualitas dan kepuasan pelanggan.',
                 'image' => 'storage/images/cargo_1.jpg',
                 'link' => '/swadesi-persada-mandiri'
 

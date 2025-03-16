@@ -21,7 +21,7 @@
 
     <!-- SEO -->
     <meta name="description" content="Jasa pengiriman Logistik dengan biaya murah dan terjangkau dapatkan penawaran khusus dari Swadesi Express">
-    <meta name="keywords" content="swadesi, swadeshi, swadesi express, logistik, jasa">
+    <meta name="keywords" content="swadesi, swadeshi, swadesi express, logistik, jasa, swadesi group, swadesi cargo, swadesi logistics, swadesi transport, swadesi delivery, swadesi ekspedisi, swadesi pengiriman, swadesi jasa pengiriman, swadesi jasa logistik, swadesi jasa transport, swadesi jasa delivery, swadesi jasa ekspedisi, swadesi jasa pengiriman murah, swadesi jasa logistik murah, swadesi jasa transport murah, swadesi jasa delivery murah, swadesi jasa ekspedisi murah">
     <meta name="author" content="Swadesi Express">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

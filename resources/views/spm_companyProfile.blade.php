@@ -34,10 +34,10 @@
 
             <!-- Menu -->
             <div class="hidden lg:flex space-x-8 gap-3 navbar-menu">
-                <a href="#home" class="text-gray-700 hover:text-gray-900 hover:underline hover:font-bold transition-all duration-300 transform hover:scale-105">Home</a>
-                <a href="#kerja-sama" class="text-gray-700 hover:text-gray-900 hover:underline hover:font-bold transition-all duration-300 transform hover:scale-105">Partner</a>
-                <a href="#tentang_kami" class="text-gray-700 hover:text-gray-900 hover:underline hover:font-bold transition-all duration-300 transform hover:scale-105">Tentang Kami</a>
-                <a href="#contact" class="text-gray-700 hover:text-gray-900 hover:underline hover:font-bold transition-all duration-300 transform hover:scale-105">Kontak Kami</a>
+                <a href="#home" class="text-gray-700 hover:text-gray-900 hover:underline">Home</a>
+                <a href="#kerja-sama" class="text-gray-700 hover:text-gray-900 hover:underline">Partner</a>
+                <a href="#tentang_kami" class="text-gray-700 hover:text-gray-900 hover:underline">Tentang Kami</a>
+                <a href="#contact" class="text-gray-700 hover:text-gray-900 hover:underline">Kontak Kami</a>
             </div>
         </div>
 
